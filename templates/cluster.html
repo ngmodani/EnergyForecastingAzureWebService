@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Cluster</title>
+
+
+
+    <!-- Bootstrap -->
+
+    <!-- Latest compiled and minified CSS -->
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+  </head>
+
+  <body>
+
+
+
+<!-- Navbar -->
+
+
+
+<nav class="navbar navbar-default">
+
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+
+        <li><a href="/home">Home </a></li>
+
+        <li><a href="/predict">Predict</a></li>
+
+        <li><a href="/classify">Classify</a></li>
+
+        <li><a href="/cluster">Cluster</a></li>
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+
+</nav>
+
+
+
+<!-- Navebar End -->
+
+
+
+
+
+<div class="container">
+
+<h3>Clustering</h3>
+<br>
+
+<form class="form-horizontal" method="POST" action="cluster">
+
+
+  <div class="form-group">
+
+    <label for="area" class="col-sm-2 control-label">Area (sq.m.)</label>
+
+    <div class="col-sm-4">
+
+      <input type="text" class="form-control" id="area" name="area" placeholder="Area" value={{area}}>
+
+    </div>
+
+  </div>
+
+  <div class="form-group">
+
+    <label for="latitude" class="col-sm-2 control-label">Latitude</label>
+
+    <div class="col-sm-4">
+
+      <input type="text" class="form-control" id="latitude" name="latitude" placeholder="Latitude" value={{latitude}}>
+
+    </div>
+
+  </div>
+
+
+  <div class="form-group">
+
+    <label for="longitude" class="col-sm-2 control-label">Longitude</label>
+
+    <div class="col-sm-4">
+
+      <input type="text" class="form-control" id="longitude" name="longitude" placeholder="Longitude" value={{longitude}}>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="form-group">
+
+    <label for="electric" class="col-sm-2 control-label">Electricity Consumption</label>
+
+    <div class="col-sm-4">
+
+      <input type="text" class="form-control" name="electric" id="electric" placeholder="Electricity" value={{electric}}>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="form-group">
+
+    <label for="heat" class="col-sm-2 control-label">Heating Consumption</label>
+
+    <div class="col-sm-4">
+
+      <input type="text" class="form-control" id="heat" name="heat" placeholder="Heat" value={{heat}}>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+
+      <button type="submit" class="btn btn-default" on-click="GetAllData()">Submit</button>
+
+    </div>
+
+  </div>
+
+</form>
+
+
+
+</div>
+
+<!-- Results -->
+
+<br><br><br>
+
+
+<div class="input-group col-sm-4" style="margin-left:222px;">
+
+  <span class="input-group-addon" id="sizing-addon2">Result from K-Means</span>
+
+  <input type="text" class="form-control" placeholder="Result" aria-describedby="sizing-addon2" value={{labelKMean}}>
+
+</div>
+
+
+  </body>
+
+</html>
