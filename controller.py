@@ -69,7 +69,7 @@ def get_data_Pred():
 def predict_lr(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/5fa55a1569a747d68e18eef0239636a4/services/27608b1318e6439d81a81a0f085d8d31/execute?api-version=2.0&format=swagger'
-    api_key = 'e3xAYK5EW4pMShJ7yFfGPRvrRoDfJCcV1rOLwmLkEqR50ta2OQtWYUxBr+KAAUzdsmL4nZnoisS2CDBKUPV8+g=='
+    api_key = 'API Key'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     
@@ -111,7 +111,7 @@ def predict_knn(temp,dew):
     body = str.encode(json.dumps(data))
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/5fa55a1569a747d68e18eef0239636a4/services/6229924063524e4ab5533a1f823dece5/execute?api-version=2.0&format=swagger'
-    api_key = '9EoiQ5Sbg2yAxBhgVRSsd2EAx0gSYtZ3reFt80k1M1EsFENFvS5EL1GesyThNedkgMrwe4Ah2eeXEw6oVUJGHw=='
+    api_key = 'API Key'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -133,7 +133,7 @@ def predict_knn(temp,dew):
 def predict_forest(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/5fa55a1569a747d68e18eef0239636a4/services/05c5473d9a58464caf02c5288d25a96a/execute?api-version=2.0&format=swagger'
-    api_key = 'zJKORRmQ7sotjmL+AKjojnOWhvUuNVzrdQ6RfaHyZH1y560Qbs/pq2gydWrZfhLCror4D5Ixz9zRw2+09Vtyiw=='
+    api_key = 'API Key'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -156,7 +156,7 @@ def predict_forest(body):
 def predict_nn(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/5fa55a1569a747d68e18eef0239636a4/services/f545e29c747c452a9071dbcc5a7855c8/execute?api-version=2.0&format=swagger'
-    api_key = '/IV+8lOT3H3W+3/2WbPF+w5Y6AWmv1C15+SuLd90AhudLNl2kOwtcpbC4LoJlXrTq7wo/s8gspN7CvH2QQdPhg=='
+    api_key = 'API Key'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -271,7 +271,7 @@ def get_data():
 def classify_glm(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/bde71633784a4179938464733837a692/services/3f7b835f18be4bd2b57e1f7551f3d81c/execute?api-version=2.0&format=swagger'
-    api_key = '8lqL5XvT9xQSlB7IHIcl9zyHof51pIRYrmAfvkpXKEPOKbuQpE7/TeaOtxbO/KeuG3QO/U6sdoZmmpPDDGqf6A==' # Replace this with the API key for the web service
+    api_key = 'API Key' # Replace this with the API key for the web service
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -294,7 +294,7 @@ def classify_glm(body):
 def classify_tree(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/bde71633784a4179938464733837a692/services/737525a092dc4b9da9330ad9a644f7a9/execute?api-version=2.0&format=swagger'
-    api_key = 'YXJOUEia07zaomZoN2nblNER2RukVJWB4j3tYLwQzmlMna1iBvCWMExvuEVvyPz6djKP5oZTRN1+i1SEkc7mDA=='
+    api_key = 'API Key'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -317,7 +317,7 @@ def classify_tree(body):
 def classify_forest(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/bde71633784a4179938464733837a692/services/d1caa0d4070746939b630b590db1b0c3/execute?api-version=2.0&format=swagger'
-    api_key = 'GiDdLdrv/hG50230FvS7H+uqZYgPr/sgEf7DSHIuODapp6u5HHr7KEbwuaAAgty9xGE0jctiKkKwjNisurIaAw=='
+    api_key = 'API Key'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -340,7 +340,7 @@ def classify_forest(body):
 def classify_nn(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/bde71633784a4179938464733837a692/services/ac93991e01524456b44fee97ed48dc9d/execute?api-version=2.0&format=swagger'
-    api_key = 'SwHZFXK7I/HU4b2FlFlSRVWJJX420ShRdX/0vTkSOBywwDLdryqYVAx9zLIM9CUp4ra1mO/AwFIa8w5wld39IA==' 
+    api_key = 'API Key' 
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
@@ -422,7 +422,7 @@ def get_data_clust():
 def cluster_kMean(body):
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/4cf184d6c98d43debeddaef6ffe92725/services/6988ed21dd3348458d85615ae6f041dc/execute?api-version=2.0&format=swagger'
-    api_key = '0T02SXPBoZ38LivdPpMWTxnNeHRZx9AMKibe9j36dQWIRgnwDRIwJSdM3cRo1NM/hlK1ZFUEJ9ZEF+vwWMxtIg==' # Replace this with the API key for the web service
+    api_key = 'API Key' # Replace this with the API key for the web service
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
 
